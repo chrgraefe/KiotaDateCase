@@ -1,0 +1,28 @@
+{
+  "descriptionHash": "F3E67DB7B3EE06B7AC280FABDEF1D696D2F52D3DA5D68B5760B656CC59579D0712D448A549AAA4535217FCC6D647CEE3468CE484697CDB25BD03CBC120D1E1FC",
+  "descriptionLocation": "../api.yaml",
+  "lockFileVersion": "1.0.0",
+  "kiotaVersion": "1.18.0",
+  "clientClassName": "ApiClient",
+  "clientNamespaceName": "Example.Endpoint",
+  "language": "CSharp",
+  "usesBackingStore": false,
+  "excludeBackwardCompatible": true,
+  "includeAdditionalData": false,
+  "disableSSLValidation": false,
+  "serializers": [
+    "none"
+  ],
+  "deserializers": [
+    "none"
+  ],
+  "structuredMimeTypes": [
+    "application/json",
+    "text/plain;q=0.9",
+    "application/x-www-form-urlencoded;q=0.2",
+    "multipart/form-data;q=0.1"
+  ],
+  "includePatterns": [],
+  "excludePatterns": [],
+  "disabledValidationRules": []
+}

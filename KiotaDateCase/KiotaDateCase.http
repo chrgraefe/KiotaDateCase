@@ -1,0 +1,10 @@
+@KiotaDateCase_HostAddress = http://localhost:5103
+
+POST {{KiotaDateCase_HostAddress}}/api/example-endpoint
+Content-Type: application/json
+{
+        "technicalKey": 888811118888111122,
+        "validFrom": "2024-02-01",
+        "validUntil": "2050-12-31"
+}
+###

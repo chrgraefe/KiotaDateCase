@@ -1,0 +1,52 @@
+﻿---
+openapi: 3.0.0
+info:
+  description: example endpoint
+  version: 1.0.0
+  title: example endpoint
+servers:
+  - url: https://<url-specified-by-example>/v1
+tags:
+  - name: Example Endpoint
+
+paths:
+  /example-endpoint:
+    post:
+      tags:
+        - Example Endpoint
+      summary: Example Endpoint
+      description: Example Endpoint
+      operationId: patchCommercialLocations
+      requestBody:
+        description: data being delivered to consumer
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ExampleData'
+        required: true
+      responses:
+        200:
+          description: Data was successfully delivered
+        500:
+          description: An error occured while processing the delivered data
+
+components:
+  schemas:
+    ExampleData:
+      type: object
+      properties:
+        technicalKey:
+          type: integer
+          format: int64
+          description: Technical key of the data
+          example: 1234567890987654321
+        validFrom:
+          type: string
+          format: date
+          description: Start date
+          example: '2024-01-11'
+        validUntil:
+          type: string
+          format: date
+          description: End date
+          example: '2050-12-31'
